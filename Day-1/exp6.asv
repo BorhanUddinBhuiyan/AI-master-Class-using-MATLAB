@@ -1,7 +1,0 @@
-clc;
-clear;
-close all;
-a=5;
-while a<100
-    a=a+5;
-en
