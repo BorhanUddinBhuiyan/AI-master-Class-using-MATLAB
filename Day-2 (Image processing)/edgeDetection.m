@@ -1,0 +1,15 @@
+clc;
+clear;
+close all;
+a=imresize(rgb2gray(imread('rose.png')), [320 256]);
+b = edge(a,'canny');
+c = edge(a,'prewitt');
+d = edge(a,'zerocross');
+e = edge(a,'sobel');
+f = edge(a,'Roberts');
+subplot(2,3,1), imshow(a),title('orginal');
+subplot(2,3,2), imshow(b),title('canny');
+subplot(2,3,3), imshow(c),title('prewitt');
+subplot(2,3,4), imshow(d),title('zeroscale');
+subplot(2,3,5), imshow(e),title('sobel');
+subplot(2,3,6), imshow(f),title('Roberts');

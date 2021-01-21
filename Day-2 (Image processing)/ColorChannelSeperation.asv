@@ -1,0 +1,12 @@
+clc;
+clear;
+close all;
+a=imread('rose.png');
+%speration of 3 Primary colors
+r=a(:,:,1); %Here colon ':' means taking all row col position matrix values
+g=a(:,:,2);
+b=a(:,:,3);
+
+%Reading the speration color
+R(:,:,1)=r;
+R(:,:,1)=0;
