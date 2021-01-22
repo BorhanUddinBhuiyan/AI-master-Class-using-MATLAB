@@ -6,7 +6,7 @@ a=imresize(rgb2gray(imread('coins.jpg')),[400 500]);
 imhist(a);
 figure, imshow(a);
 %convert that to binary
-b=a>200;
+b=a>120;
 figure, imshow(b);
 %remove the noise
 c=medfilt2(b,[3 3]);
