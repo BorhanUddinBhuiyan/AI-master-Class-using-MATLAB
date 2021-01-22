@@ -1,8 +1,0 @@
-clc;
-clear;
-close all;
-b=imresize(a,[320 256]);
-
-subplot(1,2,2);
-imshow(b);
-impixelinfo;
