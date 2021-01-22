@@ -1,0 +1,17 @@
+clc;
+clear;
+close all;
+%read image
+a=imresize(rgb2gray(imread('coins.jpg')),[400 500]);
+figure, imshow(a);
+%convert that to binary
+b=a>190;
+figure, imshow(b);
+%remove the noise
+c=medfilt2(b,[3 3]);
+figure, imshow(c);
+
+%convert to unsinged int
+d=uint8(c);
+e=d.*a; %mas
+figure, imshow(e);
