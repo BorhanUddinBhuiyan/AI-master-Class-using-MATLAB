@@ -14,7 +14,7 @@ close all;
             if isempty(BoundingBox)
                 disp('Human is not detected')
             else
-                disp('Human is deteced')
+                disp('Human is detected')
                 %GIVING THE BOX & NOTATION
                 RGB =insertObjectAnnotation(img,'rectangle',BoundingBox, 'Face');
                 RGB =insertObjectAnnotation(RGB,'rectangle',step(vision.CascadeObjectDetector('EyePairBig'),img), 'Eye');
