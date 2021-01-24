@@ -1,0 +1,13 @@
+clc;
+clear;
+close all;
+
+liveVideo=webcam(1);
+%Preview a stream of image frames.
+preview(liveVideo);
+while 1
+    img=snapshot(liveVideo);
+    msg=readBarcode(img);
+    if isempty(msg)
+    end
+    end 
