@@ -8,4 +8,5 @@ imshow(a); %showing the image
 BoundingBox=step(detector,a); %Step response of dynamic systems.
 RGB =insertObjectAnnotation(a,'rectangle',BoundingBox, 'Face');
 figure;
-imshow(RGB)
+imshow(RGB);
+impixelinfo;
