@@ -1,0 +1,24 @@
+#What is Neural Network??
+
+A neural network is a series of algorithms that endeavours to recognize underlying relationships in a set of data through a process that minics
+the way the human brain operates
+
+
+======================================================================
+				Brain Vs Neural Network
+
+Inputs(as Dendrites) => Activation Function (cell body) => Output(Axon)
+======================================================================
+
+
+				SINGLE LAYER NEURAL NETWORK
+------------------------------------------------------------------------------
+
+Output y=ϕ(v)
+
+Here ϕ=Activation Function
+     v=w1x1 + w2x2 + w3x3 + b = wx + b
+	here, w= input weight
+	      x= input
+	      b= bias
+
