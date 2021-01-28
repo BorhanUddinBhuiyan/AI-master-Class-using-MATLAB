@@ -4,15 +4,14 @@ A neural network is a series of algorithms that endeavours to recognize underlyi
 the way the human brain operates
 
 
-======================================================================
+=========================================================================
 				Brain Vs Neural Network
 
 Inputs(as Dendrites) => Activation Function (cell body) => Output(Axon)
-======================================================================
-
+=========================================================================
 
 				SINGLE LAYER NEURAL NETWORK
-------------------------------------------------------------------------------
+=========================================================================
 
 Output y=ϕ(v)
 
@@ -22,3 +21,59 @@ Here ϕ=Activation Function
 	      x= input
 	      b= bias
 
+
+## Shallow= Multi-layer Neural Netwrok
+## Deep Neural Network =Multiple Hidden Layer
+
+=========================================================================
+			Supervised Learning vs Unsupervised Learning
+
+==> if Neural Netwok has both input(Training) and output data(Target) is called supervised Learning
+==> If NN has only input data (Training class) is called unsupervsied Learning
+
+==========================================================================
+
+
+			Steps of Neural Network
+==========================================================================
+step 1: Intialize the weights
+step 2: Calcualate the error from the difference between output and correct output
+step 3: Calculate the Weight(w) Updates
+step 4: Adjust the Weight(w) Updates
+step 5: Repeat step 2 to 4 for all training data
+step 6: Repeat step 2 to 5 until the error reaches an acceptable level
+
+[N.B: Repeating 2 to 5 is called 'Epoch' or Iteration process for estimating weight ]
+=============================================================================
+
+
+			Updating the weights(w)
+=============================================================================
+1. SGD Method = i) Weight is updated N times in each epoch
+		ii) Random
+		iii) Doesn't have much stability
+		iv) Training faster
+
+2. Batch Method= i) Weight are updated only one times in each epoch
+		 ii) has stability 
+		 iii) Because of the average method the training takes long
+
+
+3. Mini Batch Method = SGD Method + Batch Method
+		      i. have stability and speed.
+=============================================================================
+
+
+			Neural Network vs Machine Learning
+=============================================================================
+==> In Neural Network there is no update or changes in eqution/function ,only update occures in weight 
+
+==> In Machine learning equation/function also update.
+=============================================================================
+
+
+			Flow of Neural Network
+=============================================================================
+1. Forward Propagation: If there is no feedback produce by output layer to the hidden layer is called Forward Propagation.
+
+1. Back Propagation: If feedback is produced by output layer towards the hidden layer is called back propagation Propagation.
